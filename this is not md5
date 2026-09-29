@@ -5,22 +5,8 @@
 规则：Hex每两个字符对应1个ASCII字符，将十六进制串解码为ASCII文本即可得到flag。
 
 解题过程
-
-方法1：Python脚本解码
-# 待解密的十六进制字符串
-hex_str = "666c61677b616537333538376261353662616566357d"
-# hex转bytes，再转字符串
-result = bytes.fromhex(hex_str).decode('ascii')
-print(result)
-运行输出：
-flag{ae73587ba56baef5}
-方法2：在线工具解码
-
+在线工具解码
 使用Hex转ASCII在线解码器，粘贴字符串，直接得到明文flag。
-
-Flag
-
-flag{ae73587ba56baef5}
 
 知识点总结
 
@@ -28,6 +14,4 @@ flag{ae73587ba56baef5}
 
 2. Hex编码不是哈希算法，编码可以直接还原原文，哈希不可逆；
 
-3. 审题很关键，题目名字直接提示不是MD5，不要陷入哈希爆破的误区。
 
-如果你想要精简版（适合直接提交到Bugku平台那个Writeup板块），我可以压缩一版。
